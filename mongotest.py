@@ -10,18 +10,18 @@ d = {
     'surname': 'goswami'
 }
 
-d = {
+e = {
     'name': 'Himanshu',
     'email': 'himgos@gmail.com',
     'surname': 'goswami'
 }
 
-d = {
-    'name': 'Himanshu',
+f = {
+   'name': 'Himanshu',
     'email': 'himgos@gmail.com',
     'surname': 'goswami'
 }
 
 db1 = client['mongotest']
 coll = db1['test']
-coll.insert_one(d)
+coll.insert_many([d,e,f])
